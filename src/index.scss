@@ -1,25 +1,24 @@
-
 $fontMap: (
-    "df": "./fonts/danger_flight/dangerflight.ttf",
-    "jitf": "./fonts/just_in_the_firestorm.ttf",
-    "tc": "./fonts/turbo_charge/turbocharge.ttf",
-    "tc3": "./fonts/turbo_charge/turbocharge3d.ttf",
-    "s": "./fonts/Skinz.ttf",
-    "a": "./fonts/automania/AUTOMANI.TTF",
-    "m": "./fonts/monoton/Monoton-Regular.ttf",
-    "mm": "./fonts/marquee-moon/marquee-moon.ttf"
+  "df": "./fonts/danger_flight/dangerflight.ttf",
+  "jitf": "./fonts/just_in_the_firestorm.ttf",
+  "tc": "./fonts/turbo_charge/turbocharge.ttf",
+  "tc3": "./fonts/turbo_charge/turbocharge3d.ttf",
+  "s": "./fonts/Skinz.ttf",
+  "a": "./fonts/automania/AUTOMANI.TTF",
+  "m": "./fonts/monoton/Monoton-Regular.ttf",
+  "mm": "./fonts/marquee-moon/marquee-moon.ttf",
 );
 
 $font: map-get($fontMap, "s");
 
 $accentColors: (
-    "blue": #59CFD7,
-    "pink": #fe019a,
-    "silver": #cdd0d7,
-    "lightBlue": #009fff82
+  "blue": #59cfd7,
+  "pink": #fe019a,
+  "silver": #cdd0d7,
+  "lightBlue": #009fff82,
 );
 :root {
-  --blue: #59CFD7;
+  --blue: #59cfd7;
   --pink: #fe019a;
   --light-blue: #009fff82;
 }
@@ -27,7 +26,6 @@ $primary: map-get($accentColors, "blue");
 $secondary: map-get($accentColors, "pink");
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
 
 $accentColor: map-get($accentColors, "lightBlue");
 
@@ -49,31 +47,31 @@ $animationTime: 2s;
 
 @keyframes fadein {
   from {
-      opacity: 0;
+    opacity: 0;
   }
 
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes lefttoright {
   from {
-      transform: translateX(-100vw);
+    transform: translateX(-100vw);
   }
 
   to {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes righttoleft {
   from {
-      transform: translateX(100vw);
+    transform: translateX(100vw);
   }
 
   to {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -85,9 +83,8 @@ body {
   background-size: 80px 80px;
   background-color: $background;
   color: $accentColor;
-  background-image:
-      linear-gradient(to right, $accentColor 5px, transparent 1px),
-      linear-gradient(to bottom, $accentColor 5px, transparent 1px);
+  background-image: linear-gradient(to right, $accentColor 5px, transparent 1px),
+    linear-gradient(to bottom, $accentColor 5px, transparent 1px);
 }
 
 .app {
@@ -128,7 +125,7 @@ h1 {
   text-shadow: 0 0 20px $fontColor;
   font-size: 64px;
   @media (max-width: 1400px) {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 

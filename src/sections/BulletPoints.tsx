@@ -15,7 +15,7 @@ const Card = styled.div`
 
 export const BulletPoints = () => {
   return (
-    <div className="app">
+    <div style={{ marginTop: "30px" }} className="app">
       <Container>
         <Card>
           <div className="circle">C</div>

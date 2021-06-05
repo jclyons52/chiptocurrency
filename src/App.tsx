@@ -5,7 +5,6 @@ import { TopBar } from "./sections/TopBar";
 
 const cryptoName = "CHIPTOCURRENCY";
 
-
 function App() {
   return (
     <ParallaxProvider>

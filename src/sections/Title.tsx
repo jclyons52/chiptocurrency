@@ -38,9 +38,9 @@ export const Title: FC<{ cryptoName: string }> = ({ cryptoName }) => {
       <div className="upper-border"></div>
       <div style={{ height: "4em" }} className="container">
         <h1 style={{ zIndex: 2 }}>{cryptoName}</h1>
-        <Behind cryptoName={cryptoName} rate={2} max={200} offset={offset} />
-        <Behind cryptoName={cryptoName} rate={3} max={150} offset={offset} />
-        <Behind cryptoName={cryptoName} rate={4} max={100} offset={offset} />
+        <Behind cryptoName={cryptoName} rate={1} max={150} offset={offset} />
+        <Behind cryptoName={cryptoName} rate={1.5} max={100} offset={offset} />
+        <Behind cryptoName={cryptoName} rate={2} max={50} offset={offset} />
       </div>
       <div className="bottom-border"></div>
     </div>
