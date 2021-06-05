@@ -1,3 +1,4 @@
+
 $fontMap: (
     "df": "./fonts/danger_flight/dangerflight.ttf",
     "jitf": "./fonts/just_in_the_firestorm.ttf",
@@ -17,6 +18,16 @@ $accentColors: (
     "silver": #cdd0d7,
     "lightBlue": #009fff82
 );
+:root {
+  --blue: #59CFD7;
+  --pink: #fe019a;
+  --light-blue: #009fff82;
+}
+$primary: map-get($accentColors, "blue");
+$secondary: map-get($accentColors, "pink");
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
 
 $accentColor: map-get($accentColors, "lightBlue");
 
@@ -70,20 +81,23 @@ body {
   margin: 0;
 }
 
-.app {
+.cyber {
   background-size: 80px 80px;
+  background-color: $background;
+  color: $accentColor;
+  background-image:
+      linear-gradient(to right, $accentColor 5px, transparent 1px),
+      linear-gradient(to bottom, $accentColor 5px, transparent 1px);
+}
+
+.app {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
   width: 100vw;
-  color: $accentColor;
   justify-content: center;
   align-items: center;
   font-family: "skinz", Verdana, Tahoma;
-  background-color: $background;
-  background-image:
-      linear-gradient(to right, $accentColor 5px, transparent 1px),
-      linear-gradient(to bottom, $accentColor 5px, transparent 1px);
 }
 
 .upper-border {
