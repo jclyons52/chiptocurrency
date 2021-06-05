@@ -1,0 +1,123 @@
+$fontMap: (
+    "df": "./fonts/danger_flight/dangerflight.ttf",
+    "jitf": "./fonts/just_in_the_firestorm.ttf",
+    "tc": "./fonts/turbo_charge/turbocharge.ttf",
+    "tc3": "./fonts/turbo_charge/turbocharge3d.ttf",
+    "s": "./fonts/Skinz.ttf",
+    "a": "./fonts/automania/AUTOMANI.TTF",
+    "m": "./fonts/monoton/Monoton-Regular.ttf",
+    "mm": "./fonts/marquee-moon/marquee-moon.ttf"
+);
+
+$font: map-get($fontMap, "s");
+
+$accentColors: (
+    "blue": #59CFD7,
+    "pink": #fe019a,
+    "silver": #cdd0d7,
+    "lightBlue": #009fff82
+);
+
+$accentColor: map-get($accentColors, "lightBlue");
+
+$fontColor: #fe019a;
+
+$background: black;
+
+@font-face {
+  font-family: "My Custom Font";
+  src: url($font) format("truetype");
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes lefttoright {
+  from {
+      transform: translateX(-100vw);
+  }
+
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes righttoleft {
+  from {
+      transform: translateX(100vw);
+  }
+
+  to {
+      transform: translateX(0);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  background-size: 80px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  height: 200vh;
+  width: 100vw;
+  color: $accentColor;
+  justify-content: center;
+  align-items: center;
+  font-family: "My Custom Font", Verdana, Tahoma;
+  background-color: $background;
+  background-image:
+      linear-gradient(to right, $accentColor 5px, transparent 1px),
+      linear-gradient(to bottom, $accentColor 5px, transparent 1px);
+}
+
+.upper-border {
+  border: 15px solid $accentColor;
+  box-shadow: 0 0 50px $accentColor;
+  animation: lefttoright 3s;
+  width: 100vw;
+}
+
+.bottom-border {
+  border: 15px solid $accentColor;
+  box-shadow: 0 0 50px $accentColor;
+  animation: righttoleft 3s;
+  width: 100vw;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  animation: fadein 3s;
+  color: $fontColor;
+  text-shadow: 0 0 20px $fontColor;
+}
+
+.circle {
+  border: 45px solid $accentColor;
+  box-shadow: 0 0 50px $accentColor;
+  color: $fontColor;
+  background-color: map-get($accentColors, "silver");
+  height: 300px;
+  border-radius: 225px;
+  font-size: 4em;
+  text-shadow: 0 0 50px $fontColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
