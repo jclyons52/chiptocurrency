@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/chiptocurrency/static/css/main.9b1b9e76.chunk.css",
+    "main.js": "/chiptocurrency/static/js/main.99561553.chunk.js",
+    "main.js.map": "/chiptocurrency/static/js/main.99561553.chunk.js.map",
+    "runtime-main.js": "/chiptocurrency/static/js/runtime-main.dfafd46b.js",
+    "runtime-main.js.map": "/chiptocurrency/static/js/runtime-main.dfafd46b.js.map",
+    "static/js/2.7f2f4b63.chunk.js": "/chiptocurrency/static/js/2.7f2f4b63.chunk.js",
+    "static/js/2.7f2f4b63.chunk.js.map": "/chiptocurrency/static/js/2.7f2f4b63.chunk.js.map",
+    "static/js/3.531e873d.chunk.js": "/chiptocurrency/static/js/3.531e873d.chunk.js",
+    "static/js/3.531e873d.chunk.js.map": "/chiptocurrency/static/js/3.531e873d.chunk.js.map",
+    "index.html": "/chiptocurrency/index.html",
+    "static/css/main.9b1b9e76.chunk.css.map": "/chiptocurrency/static/css/main.9b1b9e76.chunk.css.map",
+    "static/js/2.7f2f4b63.chunk.js.LICENSE.txt": "/chiptocurrency/static/js/2.7f2f4b63.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/chiptocurrency/static/media/Skinz.8e3c01a6.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfafd46b.js",
+    "static/js/2.7f2f4b63.chunk.js",
+    "static/css/main.9b1b9e76.chunk.css",
+    "static/js/main.99561553.chunk.js"
+  ]
+}
