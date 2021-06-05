@@ -27,8 +27,13 @@ $background: black;
 $animationTime: 2s;
 
 @font-face {
-  font-family: "My Custom Font";
+  font-family: "skinz";
   src: url($font) format("truetype");
+}
+
+@font-face {
+  font-family: "monoton";
+  src: url(map-get($fontMap, "m")) format("truetype");
 }
 
 @keyframes fadein {
@@ -74,7 +79,7 @@ body {
   color: $accentColor;
   justify-content: center;
   align-items: center;
-  font-family: "My Custom Font", Verdana, Tahoma;
+  font-family: "skinz", Verdana, Tahoma;
   background-color: $background;
   background-image:
       linear-gradient(to right, $accentColor 5px, transparent 1px),
@@ -117,16 +122,16 @@ h1 {
   border: 45px solid $accentColor;
   box-shadow: 0 0 50px $accentColor;
   color: $fontColor;
+  font-family: "monoton", Verdana, Tahoma;
   background-color: map-get($accentColors, "silver");
   height: 300px;
   width: 300px;
   border-radius: 225px;
-  font-size: 4em;
+  font-size: 6em;
   @media (max-width: 1400px) {
     height: 200px;
     width: 200px;
     border-radius: 150px;
-    font-size: 3em;
   }
   text-shadow: 0 0 50px $fontColor;
   display: flex;
