@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chiptocurrency/static/css/main.bfac535e.chunk.css",
+    "main.css": "/chiptocurrency/static/css/main.278471ef.chunk.css",
     "main.js": "/chiptocurrency/static/js/main.f22a9624.chunk.js",
     "main.js.map": "/chiptocurrency/static/js/main.f22a9624.chunk.js.map",
     "runtime-main.js": "/chiptocurrency/static/js/runtime-main.66966c39.js",
@@ -10,14 +10,14 @@
     "static/js/3.4ba5a5a9.chunk.js": "/chiptocurrency/static/js/3.4ba5a5a9.chunk.js",
     "static/js/3.4ba5a5a9.chunk.js.map": "/chiptocurrency/static/js/3.4ba5a5a9.chunk.js.map",
     "index.html": "/chiptocurrency/index.html",
-    "static/css/main.bfac535e.chunk.css.map": "/chiptocurrency/static/css/main.bfac535e.chunk.css.map",
+    "static/css/main.278471ef.chunk.css.map": "/chiptocurrency/static/css/main.278471ef.chunk.css.map",
     "static/js/2.60c296eb.chunk.js.LICENSE.txt": "/chiptocurrency/static/js/2.60c296eb.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/chiptocurrency/static/media/Skinz.8e3c01a6.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.66966c39.js",
     "static/js/2.60c296eb.chunk.js",
-    "static/css/main.bfac535e.chunk.css",
+    "static/css/main.278471ef.chunk.css",
     "static/js/main.f22a9624.chunk.js"
   ]
 }
