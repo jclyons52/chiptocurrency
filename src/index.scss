@@ -24,6 +24,8 @@ $fontColor: #fe019a;
 
 $background: black;
 
+$animationTime: 2s;
+
 @font-face {
   font-family: "My Custom Font";
   src: url($font) format("truetype");
@@ -67,8 +69,7 @@ body {
   background-size: 80px 80px;
   display: flex;
   flex-wrap: wrap;
-  font-size: 2em;
-  height: 200vh;
+  height: 100vh;
   width: 100vw;
   color: $accentColor;
   justify-content: center;
@@ -83,28 +84,33 @@ body {
 .upper-border {
   border: 15px solid $accentColor;
   box-shadow: 0 0 50px $accentColor;
-  animation: lefttoright 3s;
+  animation: lefttoright $animationTime;
   width: 100vw;
 }
 
 .bottom-border {
   border: 15px solid $accentColor;
   box-shadow: 0 0 50px $accentColor;
-  animation: righttoleft 3s;
+  animation: righttoleft $animationTime;
   width: 100vw;
 }
 
 .container {
-  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 h1 {
-  animation: fadein 3s;
+  animation: fadein $animationTime;
+  position: absolute;
   color: $fontColor;
   text-shadow: 0 0 20px $fontColor;
+  font-size: 64px;
+  @media (max-width: 1400px) {
+    font-size: 12px;
+  }
 }
 
 .circle {
@@ -113,11 +119,17 @@ h1 {
   color: $fontColor;
   background-color: map-get($accentColors, "silver");
   height: 300px;
+  width: 300px;
   border-radius: 225px;
   font-size: 4em;
+  @media (max-width: 1400px) {
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    font-size: 3em;
+  }
   text-shadow: 0 0 50px $fontColor;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
 }
