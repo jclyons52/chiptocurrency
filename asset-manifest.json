@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chiptocurrency/static/css/main.7b5566ab.chunk.css",
-    "main.js": "/chiptocurrency/static/js/main.2529c47e.chunk.js",
-    "main.js.map": "/chiptocurrency/static/js/main.2529c47e.chunk.js.map",
+    "main.js": "/chiptocurrency/static/js/main.815facec.chunk.js",
+    "main.js.map": "/chiptocurrency/static/js/main.815facec.chunk.js.map",
     "runtime-main.js": "/chiptocurrency/static/js/runtime-main.8baf1578.js",
     "runtime-main.js.map": "/chiptocurrency/static/js/runtime-main.8baf1578.js.map",
     "static/js/2.31680c9e.chunk.js": "/chiptocurrency/static/js/2.31680c9e.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8baf1578.js",
     "static/js/2.31680c9e.chunk.js",
     "static/css/main.7b5566ab.chunk.css",
-    "static/js/main.2529c47e.chunk.js"
+    "static/js/main.815facec.chunk.js"
   ]
 }
